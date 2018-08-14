@@ -1,5 +1,4 @@
-from operator import itemgetter
-
+# Problem_1:
 def avg_temp():
     n = int(input("Number of inputs: "))
     val = [] #Stores Sensor_id, time, temp
@@ -32,3 +31,19 @@ def avg_temp():
     print("13000-13999: ", avg_val_13999/count_4)
 
 avg_temp()
+
+"""Input Data
+1,10000,40
+1,10002,45
+1,11015,50
+2,10005,42
+2,11051,45
+2,12064,42
+2,13161,42
+
+Output Data (if configuration is 1 second)
+10000-10999: 42.33
+11000-11999: 47.5
+12000-12999: 42
+13000-13999: 42
+"""
